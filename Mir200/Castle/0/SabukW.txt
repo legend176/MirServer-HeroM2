@@ -1,8 +1,8 @@
 [Setup]
 CastleName=沙巴克
-ChangeDate=2006-3-9 下午 09:04:54
-WarDate=2006-3-9 下午 09:04:54
-IncomeToday=2006-5-17 下午 07:58:37
+ChangeDate=2006-03-09 21:04:54
+WarDate=2006-03-09 21:04:54
+IncomeToday=2016-02-14 22:22:54
 TotalGold=12000
 TodayIncome=12000
 [Defense]
