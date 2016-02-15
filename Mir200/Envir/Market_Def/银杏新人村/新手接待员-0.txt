@@ -1,22 +1,23 @@
-(@buy @sell @repair @s_repair )
-%100
-+40
-+1
+
 [@main]
-您来这里卖肉吗？\ \
- <卖/@sell>肉\
- <询问/@meathelp>\
- <离开/@exit>\
+欢迎来到 {<$SERVERNAME>/SCOLOR=253} \ \
+ <领取新手药包/@getNewPlayerItems>    <传送新人地图1/@新人地图1>\ \
+ <离开/@exit>
 
+[@getNewPlayerItems]
+#IF
+    CHECKLEVELEX < 10
+    CheckBagSize 5
+#ACT
+    give 金创药(小)包 5
+    break
+#elsesay
+    你不是新手或者背包空间不足 \ \
+    <返回/@main>
 
-[@meathelp]
-肉可以从鸡，鹿，狼身上割的. 先打这些怪物\
-小心碰到比自己厉害的怪物被打死\
-打死怪物之后，按alt键，把鼠标放在怪物尸体上\
-您就会看到自己割肉的样子.\
-过一会儿，您的包里就会放着一个大肉块.\
-对了，差一点忘了告诉您，企图逃跑的怪物品质更好\
-为了方便，使用魔法打怪物，其品质会变成0，这一点千万记住.\ \
- <继续/@main>
+[@新人地图1]
+#act
+    give    回城卷
+    mapmove xinren1
+
 [goods]
-
