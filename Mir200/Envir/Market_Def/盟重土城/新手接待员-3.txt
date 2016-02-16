@@ -1,0 +1,23 @@
+
+[@main]
+欢迎来到 {<$SERVERNAME>/SCOLOR=253} \ \
+ <领取新手药包/@getNewPlayerItems>    <传送/@mapMoveMengZhong>\ \
+ <离开/@exit>
+
+[@getNewPlayerItems]
+#IF
+    CHECKLEVELEX < 10
+    CheckBagSize 5
+#ACT
+    give 金创药(小)包 5
+    break
+#elsesay
+    你不是新手或者背包空间不足 \ \
+    <返回/@main>
+
+[@mapMoveMengZhong]
+#act
+    give    回城卷
+    mapmove putong1
+
+[goods]
