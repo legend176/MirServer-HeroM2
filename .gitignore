@@ -20,3 +20,5 @@ DBServer/!serverinfo.txt
 LoginSrv/!addrtable.txt
 LoginSrv/!serveraddr.txt
 Mir200/!servertable.txt
+Web/_site
+.jekyll-metadata
